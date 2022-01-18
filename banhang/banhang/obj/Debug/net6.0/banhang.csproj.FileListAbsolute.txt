@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\banhang.exe
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\banhang.deps.json
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\banhang.runtimeconfig.json
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\banhang.dll
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\ref\banhang.dll
+C:\Users\PC\source\repos\banhang\banhang\bin\Debug\net6.0\banhang.pdb
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.AssemblyInfo.cs
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.dll
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\ref\banhang.dll
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.pdb
+C:\Users\PC\source\repos\banhang\banhang\obj\Debug\net6.0\banhang.genruntimeconfig.cache
