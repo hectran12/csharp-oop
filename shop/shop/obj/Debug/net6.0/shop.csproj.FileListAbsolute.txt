@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\shop.exe
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\shop.deps.json
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\shop.runtimeconfig.json
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\shop.dll
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\ref\shop.dll
+C:\Users\PC\source\repos\shop\shop\bin\Debug\net6.0\shop.pdb
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.AssemblyInfo.cs
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.dll
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\ref\shop.dll
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.pdb
+C:\Users\PC\source\repos\shop\shop\obj\Debug\net6.0\shop.genruntimeconfig.cache
