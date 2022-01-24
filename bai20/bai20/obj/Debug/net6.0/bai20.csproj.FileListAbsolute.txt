@@ -1,0 +1,15 @@
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\bai20.exe
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\bai20.deps.json
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\bai20.runtimeconfig.json
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\bai20.dll
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\ref\bai20.dll
+C:\Users\nguye\source\repos\bai20\bai20\bin\Debug\net6.0\bai20.pdb
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.AssemblyInfoInputs.cache
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.AssemblyInfo.cs
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.dll
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\ref\bai20.dll
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.pdb
+C:\Users\nguye\source\repos\bai20\bai20\obj\Debug\net6.0\bai20.genruntimeconfig.cache
