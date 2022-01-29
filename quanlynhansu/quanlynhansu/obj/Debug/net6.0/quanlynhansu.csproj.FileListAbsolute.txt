@@ -1,0 +1,15 @@
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\quanlynhansu.exe
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\quanlynhansu.deps.json
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\quanlynhansu.runtimeconfig.json
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\quanlynhansu.dll
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\ref\quanlynhansu.dll
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\bin\Debug\net6.0\quanlynhansu.pdb
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.AssemblyInfoInputs.cache
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.AssemblyInfo.cs
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.dll
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\ref\quanlynhansu.dll
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.pdb
+C:\Users\nguye\source\repos\quanlynhansu\quanlynhansu\obj\Debug\net6.0\quanlynhansu.genruntimeconfig.cache
