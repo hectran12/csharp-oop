@@ -372,6 +372,8 @@ namespace NganHang
                     case 5:
                         RutTien();
                         break;
+
+                    // toi code tiep hihi
                     default:
                         break;
 
