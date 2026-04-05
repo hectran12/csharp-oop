@@ -1,0 +1,7 @@
+F:\REPO_WIN_PURPLE\NganHang\NganHang\obj\Debug\NganHang.csproj.AssemblyReference.cache
+F:\REPO_WIN_PURPLE\NganHang\NganHang\obj\Debug\NganHang.csproj.CoreCompileInputs.cache
+F:\REPO_WIN_PURPLE\NganHang\NganHang\bin\Debug\NganHang.exe.config
+F:\REPO_WIN_PURPLE\NganHang\NganHang\bin\Debug\NganHang.exe
+F:\REPO_WIN_PURPLE\NganHang\NganHang\bin\Debug\NganHang.pdb
+F:\REPO_WIN_PURPLE\NganHang\NganHang\obj\Debug\NganHang.exe
+F:\REPO_WIN_PURPLE\NganHang\NganHang\obj\Debug\NganHang.pdb
