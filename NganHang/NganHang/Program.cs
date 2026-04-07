@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -244,12 +246,12 @@ namespace NganHang
             dsNganHang.HienThiToanBoDanhSachTaiKhoan();
         }
 
-        static TaiKhoanNganHang YeuCauNhapSoTaiKhoanRoiTim ()
+        static TaiKhoanNganHang YeuCauNhapSoTaiKhoanRoiTim (string customMessage = "Nhap so tai khoan muon tim: ")
         {
             string soTaiKhoan;
             do
             {
-                Console.WriteLine("Nhap so tai khoan muon tim: ");
+                Console.WriteLine(customMessage);
                 soTaiKhoan = Console.ReadLine();
             } while (String.IsNullOrEmpty(soTaiKhoan));
             TaiKhoanNganHang tkNh = dsNganHang.TimTaiKhoanTheoSoTaiKhoan(soTaiKhoan);
@@ -346,7 +348,118 @@ namespace NganHang
                 Console.WriteLine("Rut tien thanh cong {0} cho so tai khoan {1}", soTienMuonRut, tkNh.SoTaiKhoan);
         }
 
+        static void ChuyenKhoan ()
+        {
+            showTitleChucNang("Chuyen tien tu tai khoan nay den tai khoan no");
+            TaiKhoanNganHang tkNh = YeuCauNhapSoTaiKhoanRoiTim("Nhap so tai khoan (tu): ");
+            if (tkNh == null)
+            {
+                Console.WriteLine("So tai khoan tu khong ton tai!");
+                return;
+            }
+
+            showTitleChucNang("Thong tin so tai " + tkNh.SoTaiKhoan);
+            Console.WriteLine("Chu tai khoan: {0}", tkNh.ChuTaiKhoan.HoTen);
+            Console.WriteLine("So du hien tai: {0}", tkNh.SoDu);
+            Console.WriteLine("Loai tai khoan: {0}", tkNh.LoaiTaiKhoan);
+
+            TaiKhoanNganHang tkNhDen = YeuCauNhapSoTaiKhoanRoiTim("Nhap so tai khoan (muon gui den): ");
+            if (tkNhDen == null)
+            {
+                Console.WriteLine("So tai khoan den khong ton tai!");
+                return;
+            }
+
+
+            long soTienMuonChuyen;
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Nhap so tien muon chuyen: ");
+                    soTienMuonChuyen = long.Parse(Console.ReadLine());
+                    if (soTienMuonChuyen < 0)
+                    {
+                        Console.WriteLine("So tien chueyn khong dc nho hon khong!");
+
+                    }
+                    break;
+                } catch
+                {
+                    Console.WriteLine("So tien ban nhap khong hop le!");
+                }
+                
+
+            }
+            
+            if (tkNh.ChuyenKhoan(soTienMuonChuyen, tkNhDen))
+            {
+                Console.WriteLine("Chuyen khoan thanh cong!");
+            } else
+            {
+                Console.WriteLine("Chuyen khoan that bai!");
+            }
+
+
+
+        }
+
+        static void XoaTaiKhoan ()
+        {
+            showTitleChucNang("Xoa tai khoan theo so tai khoan");
+            TaiKhoanNganHang tkNh = YeuCauNhapSoTaiKhoanRoiTim("Nhap so tai khoan muon xoa: ");
+            if (tkNh == null)
+            {
+                Console.WriteLine("So tai khong muon xoa khong hop le!");
+                return;
+            }
+
+            if(dsNganHang.XoaTaiKhoanTheoSoTaiKhoan(tkNh.SoTaiKhoan))
+            {
+                Console.WriteLine("Xoa tai khoan thanh cong!");
+                return;
+            }
+            Console.WriteLine("Xoa tai khoan that bai!");
+
+        }
+
+        static void SapXepGiamDan ()
+        {
+            showTitleChucNang("Sap xep lai danh sach ngan hang giam dan theo so du");
+            dsNganHang.SapXepGiamDanTheoSoDu();
+            dsNganHang.HienThiToanBoDanhSachTaiKhoan();
+        }
        
+        static void TaiKhoanCoSoDuLonNhat ()
+        {
+            showTitleChucNang("Thong tin tai khoan co so du lon nhat");
+            TaiKhoanNganHang tkNh = dsNganHang.TimTaiKhoanCoSoDuLonNhat();
+            if (tkNh == null)
+            {
+                Console.WriteLine("Khong co tai khoan nao de tim tai khoan co so du lon nhat");
+                return;
+            }
+            Console.WriteLine("Thong tin so tai khoan: {0}", tkNh.SoTaiKhoan);
+            Console.WriteLine("Ho va ten chu the: {0}", tkNh.ChuTaiKhoan.HoTen);
+            Console.WriteLine("So du: {0}", tkNh.SoDu);
+
+        }
+        
+        static void ThongKeTheoLoai ()
+        {
+            showTitleChucNang("Thong ke theo loai");
+            Dictionary<LoaiTaiKhoan, List<TaiKhoanNganHang>> result = dsNganHang.ThongKeTheoLoai();
+            foreach (KeyValuePair<LoaiTaiKhoan, List<TaiKhoanNganHang>> item in  result)
+            {
+                Console.WriteLine("====" + item.Key + "=====");
+                foreach (TaiKhoanNganHang tkNh in item.Value)
+                {
+                    Console.WriteLine(tkNh.ToString());
+                }
+               
+            }
+        }
         static void Main(string[] args)
         {
             loadBaseCustomer();
@@ -372,8 +485,21 @@ namespace NganHang
                     case 5:
                         RutTien();
                         break;
-
-                    // toi code tiep hihi
+                    case 6:
+                        ChuyenKhoan();
+                        break;
+                    case 7:
+                        XoaTaiKhoan();
+                        break;
+                    case 8:
+                        SapXepGiamDan();
+                        break;
+                    case 9:
+                        TaiKhoanCoSoDuLonNhat();
+                        break;
+                    case 10:
+                        ThongKeTheoLoai();
+                        break;
                     default:
                         break;
 

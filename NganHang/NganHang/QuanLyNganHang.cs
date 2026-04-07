@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace NganHang
 {
+
+
     internal class QuanLyNganHang
     {
 
@@ -32,6 +34,26 @@ namespace NganHang
         #region Methods
 
 
+        public Dictionary<LoaiTaiKhoan, List<TaiKhoanNganHang>> ThongKeTheoLoai ()
+        {
+            Dictionary<LoaiTaiKhoan, List<TaiKhoanNganHang>> result = new Dictionary<LoaiTaiKhoan, List<TaiKhoanNganHang>> ();
+            foreach (TaiKhoanNganHang tk in DsTaiKhoanNganHang)
+            {
+                if (result.ContainsKey(tk.LoaiTaiKhoan) == false)
+                {
+                    result.Add(tk.LoaiTaiKhoan, new List<TaiKhoanNganHang>());
+                }
+                result[tk.LoaiTaiKhoan].Add(tk);
+                
+            }
+            return result;
+        }
+
+        public bool SapXepGiamDanTheoSoDu ()
+        {
+            DsTaiKhoanNganHang.Sort((a, b) => b.SoDu.CompareTo(a.SoDu));
+            return true;
+        }
        
 
         public bool ThemTaiKhoanMoi (TaiKhoanNganHang taiKhoanNganHang)
@@ -39,6 +61,16 @@ namespace NganHang
             DsTaiKhoanNganHang.Add(taiKhoanNganHang);
             return true;
         }
+
+        public TaiKhoanNganHang TimTaiKhoanCoSoDuLonNhat ()
+        {
+            List<TaiKhoanNganHang> dsTkClone = DsTaiKhoanNganHang;
+            dsTkClone.Sort((a, b) => b.SoDu.CompareTo (a.SoDu));
+            if (dsTkClone.Count > 0) return dsTkClone[0];
+            return null;
+        }
+
+
 
         public bool XoaTaiKhoanTheoSoTaiKhoan (string soTaiKhoan)
         {
